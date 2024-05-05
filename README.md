@@ -20,6 +20,8 @@ Monitor events and automatically synchronize files to the infini-cloud cloud usi
 
 3. Configure paths
 
+   The path name cannot contain Chinese characters.
+
    - `FileSync.ps1`
 
    ```ps1
@@ -36,7 +38,7 @@ Monitor events and automatically synchronize files to the infini-cloud cloud usi
    scriptPath = ""
    ```
 
-4. Set up auto-start on boot
+5. Set up auto-start on boot
 
    - Press `Win` + `R` to open the Run dialog, then type `shell:startup`
    - Copy the `Startup_FileSync.vbs` file into the folder
