@@ -6,7 +6,7 @@ $remote_folder = ''
 $exclude_file = '.zfs/**'
 
 $filter = '*.*'
-$fsw = New-Object IO.FileSystemWatcher $folder, $filter -Property @{
+$fsw = New-Object IO.FileSystemWatcher $local_folder, $filter -Property @{
 	IncludeSubdirectories = $true
 	NotifyFilter          = [IO.NotifyFilters]'FileName, LastWrite'
 }
